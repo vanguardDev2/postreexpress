@@ -135,7 +135,7 @@ export default function FiltersPanel() {
             </span>
           </div>
           <Slider
-            defaultValue={[0, 20]}
+            defaultValue={[5000,1000000]}
             min={5000}
             max={60000}
             step={0.5}
