@@ -23,7 +23,7 @@ export default function FiltersPanel() {
   );
   const [priceRange, setPriceRange] = useState([
     parseFloat(searchParams.get("minPrice") || "0"),
-    parseFloat(searchParams.get("maxPrice") || "20"),
+    parseFloat(searchParams.get("maxPrice") || "100000"),
   ]);
   const [ingredientes, setIngredientes] = useState<Ingrediente[]>([]);
   const [selectedIngredientes, setSelectedIngredientes] = useState<number[]>(
@@ -135,7 +135,7 @@ export default function FiltersPanel() {
             </span>
           </div>
           <Slider
-            defaultValue={[5000,1000000]}
+            defaultValue={[0,60000]}
             min={5000}
             max={60000}
             step={0.5}
